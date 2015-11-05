@@ -63,4 +63,25 @@ public class MainTest {
         assertFalse(Main.balance(secondFalse));
 
     }
+
+    @org.junit.Test
+    public void testIsDiss() throws Exception{
+        //setup
+        char a = 'a';
+        char b = 'b';
+        char space = ' ';
+
+        //excercise
+
+        boolean firstResult = Main.isDiss(a);
+        boolean secondResult = Main.isDiss(b);
+        boolean thirdResult = Main.isDiss(space);
+
+        //verify
+
+        assertFalse(firstResult);
+        assertTrue(secondResult);
+        assertFalse(thirdResult);
+
+    }
 }
